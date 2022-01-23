@@ -18,14 +18,14 @@ news_dict = data.json()
 news = news_dict['articles']
 speak("Here are the top ten news of the world...")
 speak("So our first news is ")
-for i in range(1,11):
-    print(i)
+for i in range(0,10):
+    print(i+1)
     print(news[i]['description'])
     speak(news[i]['description'])
-    if i>=11:
+    if i>=9:
         break
     time.sleep(1)
-    if i==10:
+    if i==8:
         speak("So our last news is ")
     else:
         speak("Moving on to the next news...")
